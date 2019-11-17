@@ -1,0 +1,33 @@
+{
+	"is-c3-addon": true,
+	"type": "plugin",
+	"name": "Authentication",
+	"id": "Rex_NGIO_Authentication",
+	"version": "0.1.0.0",
+	"author": "Rex.Rainbow/Pixel Perfect Studio",
+	"website": "https://rexrainbow.github.io/C3RexDoc/plugins.md/index.html",
+	"documentation": "https://rexrainbow.github.io/C3RexDoc/plugins.md/rex_ngio_authentication.html",
+	"description": "Authentication which is provided by Newgrounds.io. C3 Port by Pixel Perfect Studio",
+	"editor-scripts": [
+						"plugin.js",
+						"type.js",
+						"instance.js"
+					],
+	"file-list": [
+		"newgroundsio.min.js",
+		"c3runtime/actions.js",
+		"c3runtime/conditions.js",
+		"c3runtime/expressions.js",
+		"c3runtime/instance.js",
+		"c3runtime/plugin.js",
+		"c3runtime/type.js",
+		"c2runtime/runtime.js",
+		"lang/en-US.json",
+		"aces.json",
+		"addon.json",
+		"icon.png",
+		"plugin.js",
+		"type.js",
+		"instance.js"
+	]
+}
