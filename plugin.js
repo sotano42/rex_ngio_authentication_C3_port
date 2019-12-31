@@ -3,7 +3,7 @@
 
 {
 	const PLUGIN_ID = "Rex_NGIO_Authentication";
-	const PLUGIN_VERSION = "0.1.0.0";
+	const PLUGIN_VERSION = "0.1.0.1";
 	const PLUGIN_CATEGORY = "web";
 
 	let app = null;
@@ -14,12 +14,12 @@
 		{
 			super(PLUGIN_ID);
 			SDK.Lang.PushContext("plugins." + PLUGIN_ID.toLowerCase());
-			this._info.SetIcon("icon.png", "image/png");
+			//this._info.SetIcon("icon.svg", "image/svg+xml");
 			this._info.SetName(lang(".name"));
 			this._info.SetDescription(lang(".description"));
 			this._info.SetVersion(PLUGIN_VERSION);
 			this._info.SetCategory(PLUGIN_CATEGORY);
-			this._info.SetAuthor("Rex.Rainbow");
+			this._info.SetAuthor("Rex.Rainbow/Port by Pixel Perfect Studio");
 			this._info.SetHelpUrl(lang(".help-url"));
 			this._info.SetIsSingleGlobal(true);
 			this._info.SetIsDeprecated(false);

@@ -8,13 +8,16 @@
 			super(inst);
 			
 			// Initialise object properties
-			
+			this.ngio=null;
+
 			if (properties)		// note properties may be null in some cases
 			{						
 				this.ngio = new window["Newgrounds"]["io"]["core"](properties[0], properties[1]);
+				window.ngioInstance = this.ngio;
 				this.ngio["debug"] = (properties[2] === 1);
 			}
 
+			console.log(this);
 			this.isLogin = false;
 
 			this.LoginPooling();
@@ -71,7 +74,8 @@
 		}
 		
 		GetNGIO() {
-			return this.ngio;
+			//return this.ngio;
+			return window.ngioInstance;
 		};
 	};
 }
