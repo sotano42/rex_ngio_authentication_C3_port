@@ -1,6 +1,7 @@
 "use strict";
 
 {
+	const SDK=self.SDK;
 	const PLUGIN_CLASS = SDK.Plugins.Rex_NGIO_Authentication;
 
 	PLUGIN_CLASS.Type = class Rex_NGIO_AuthenticationType extends SDK.ITypeBase

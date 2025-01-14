@@ -5,6 +5,7 @@
 	const PLUGIN_ID = "Rex_NGIO_Authentication";
 	const PLUGIN_VERSION = "0.1.0.1";
 	const PLUGIN_CATEGORY = "web";
+	const SDK=self.SDK;
 
 	let app = null;
 
@@ -32,7 +33,7 @@
 			]);
 			this._info.AddFileDependency({
 				filename: "newgroundsio.min.js",
-				type: "external-script"
+				type: "inline-script"
 				});
 			SDK.Lang.PopContext();		// .properties
 			SDK.Lang.PopContext();

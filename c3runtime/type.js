@@ -1,7 +1,8 @@
 "use strict";
 
 {
-	C3.Plugins.Rex_NGIO_Authentication.Type = class SingleGlobalType extends C3.SDKTypeBase
+	const C3=self.C3;
+	C3.Plugins.Rex_NGIO_Authentication.Type = class Rex_NGIO_Authentication_Type extends C3.SDKTypeBase
 	{
 		constructor(objectClass)
 		{

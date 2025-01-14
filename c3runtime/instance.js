@@ -1,7 +1,8 @@
 "use strict";
 
 {
-	C3.Plugins.Rex_NGIO_Authentication.Instance = class SingleGlobalInstance extends C3.SDKInstanceBase
+	const C3=self.C3;
+	C3.Plugins.Rex_NGIO_Authentication.Instance = class Rex_NGIO_Authentication_Instance extends C3.SDKInstanceBase
 	{
 		constructor(inst, properties)
 		{
@@ -12,8 +13,8 @@
 
 			if (properties)		// note properties may be null in some cases
 			{						
-				this.ngio = new window["Newgrounds"]["io"]["core"](properties[0], properties[1]);
-				window.ngioInstance = this.ngio;
+				this.ngio = new self["Newgrounds"]["io"]["core"](properties[0], properties[1]);
+				self.ngioInstance = this.ngio;
 				this.ngio["debug"] = (properties[2] === 1);
 			}
 
@@ -75,7 +76,7 @@
 		
 		GetNGIO() {
 			//return this.ngio;
-			return window.ngioInstance;
+			return self.ngioInstance;
 		};
 	};
 }
